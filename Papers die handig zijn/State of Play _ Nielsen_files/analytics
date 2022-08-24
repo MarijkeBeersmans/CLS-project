@@ -1,0 +1,8 @@
+
+function piResponse() {
+	piSetCookie('pi_opt_in881703', 'false', 3650);
+	piSetCookie('visitor_id881703', '', 3650);
+}
+piResponse();
+
+

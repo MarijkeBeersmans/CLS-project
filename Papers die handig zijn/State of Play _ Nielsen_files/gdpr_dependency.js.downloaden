@@ -1,0 +1,15 @@
+const countrySelect = document.querySelector(".country select");
+const usaValue = document.querySelector(".country select option:nth-child(184)").value;
+const gdpr = document.querySelector(".gdpr");
+gdpr.style.display = "none";
+countrySelect.addEventListener("change", displayOptIn);
+function displayOptIn() {
+    const selectedCountry = countrySelect.value;
+
+    if (selectedCountry != usaValue && selectedCountry != "") {
+        gdpr.style.display = "block";
+    } else {
+        gdpr.style.display = "none";
+    }
+};
+displayOptIn();
